@@ -55,7 +55,6 @@ a.enlaces-estilos:hover {
     background-color: white;
 }
 
-
 a.vicentemr {
     color: #2B5F9D;
     text-decoration: none;
@@ -93,10 +92,50 @@ input.search:focus {
     background-color: #f8f9fa;
 }
 
+.hola {
+    background-color: red;
+    margin-top: 140px;
+}
+
 @media screen and (max-width: 600px) {
 
     .title {
-        font-size: 20px;
+        font-size: 30px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
+    input.search{
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 100px;
+        left: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a.enlaces-estilos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 15px;
+        width: 100px;
+        height: 30px;
+    }
+
+    a.vicentemr {
+        width: 100px;
+    }
+
+
 
 }
