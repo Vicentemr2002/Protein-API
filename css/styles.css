@@ -31,15 +31,29 @@ header {
     color: #1B1B1C;
     width: 250px;
     margin: 40px;
-
+    text-decoration: none;
 
 }
 
 .menu {
     display: flex;
     gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    /* Fondo transparente por defecto */
+    transition: background-color 0.3s ease;
+    /* Transición suave de fondo */
     font-size: 20px;
-    padding: 50px;
+    padding: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    transition: all 0.3s ease;
+    /* Transición suave para los enlaces */
 }
 
 a.enlaces-estilos {
@@ -98,44 +112,91 @@ input.search:focus {
     margin-top: 140px;
 }
 
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 600px) {
 
     .title {
         font-size: 30px;
-        padding: 20px;
+        text-align: center;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        text-align: left;
     }
 
-    input.search{
+    input.search {
         display: none;
     }
 
-    .menu {
-        display: flex;
-        flex-wrap: wrap;
-        position: absolute;
-        top: 68px;
-        left: 1px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
     a.enlaces-estilos {
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-        font-size: 15px;
+        font-size: 14px;
         width: 100px;
         height: 30px;
     }
 
     a.vicentemr {
+        font-size: 14px;
         width: 100px;
         text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu a {
+        display: none;
+        width: 100px;
+        padding: 15px;
+        text-align: center;
+        background-color: #ffffff;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu.open {
+        background-color: #ffffff;
+        padding-top: 300px;
+        padding-right: 400px ;
+    }
+
+    .menu.open a,
+    .menu.open {
+        display: block;
+        opacity: 0;
+        transform: translateY(-10px);
+        animation: fadeSlideIn 0.3s forwards ease;
+    }
+
+
+    .menu.open .menu-toggle::before {
+        content: "\2715";
+        font-size: 30px;
+    }
+
+
+}
+
+/* Animación para mostrar el menú */
+@keyframes fadeSlideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 
 
