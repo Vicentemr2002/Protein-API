@@ -1,10 +1,8 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
 }
 
-/* Estilo general del cuerpo */
 body {
     background-color: #E3E7F1;
     display: flex;
@@ -13,7 +11,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Estilo del encabezado */
 header {
     background-color: #FFFFFF;
     height: 100px;
@@ -27,7 +24,6 @@ header {
     box-shadow: 0 1px 0 #808080;
 }
 
-/* Estilo del título */
 .title {
     font-size: 40px;
     font-weight: 800;
@@ -36,7 +32,6 @@ header {
     margin: 40px;
 }
 
-/* Estilo del menú */
 .menu {
     display: flex;
     gap: 20px;
@@ -55,7 +50,6 @@ header {
     transition: all 0.3s ease;
 }
 
-/* Estilo de los enlaces */
 a.enlaces-estilos {
     color: black;
     text-decoration: none;
@@ -85,7 +79,6 @@ a.vicentemr:hover {
     color: black;
 }
 
-/* Estilo del input de búsqueda */
 input.search {
     border: 1px solid #2A2A2A;
     border-radius: 20px;
@@ -107,7 +100,7 @@ input.search:focus {
     background-color: #f8f9fa;
 }
 
-/* Estilo de botones de menú para mobile */
+
 .menu-toggle, .menu-close {
     position: relative;
     display: none;
@@ -117,7 +110,7 @@ input.search:focus {
     cursor: pointer;
 }
 
-/* Contenedor de presentación */
+
 .container-presentation {
     position: relative;
     top: 200px;
@@ -126,12 +119,11 @@ input.search:focus {
     height: 50%;
 }
 
-/* Texto de presentación en índice */
+
 .index-presentation p {
     text-align: center;
 }
 
-/* Estilos para pantallas pequeñas (mobile) */
 @media screen and (max-width: 600px) {
 
     .title {
@@ -219,7 +211,7 @@ input.search:focus {
     }
 }
 
-/* Animaciones */
+
 @keyframes fadeSlideIn {
     to {
         opacity: 1;
