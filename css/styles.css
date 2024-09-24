@@ -21,7 +21,7 @@ header {
     top: 0;
     display: flex;
     align-items: center;
-
+    text-align: right;
 }
 
 .title {
@@ -46,6 +46,7 @@ header {
     color: #333;
     padding: 10px;
     transition: all 0.3s ease;
+
 }
 
 a.enlaces-estilos {
@@ -99,15 +100,6 @@ input.search:focus {
 }
 
 
-.menu-toggle, .menu-close {
-    position: relative;
-    display: none;
-    font-size: 30px;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
 
 .container-presentation {
     position: relative;
@@ -153,66 +145,6 @@ input.search:focus {
         display: none;
         width: 100px;
         padding: 15px;
-        text-align: center;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .menu.open {
-        display: block;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        font-size: 30px;
-        color: #333;
-        cursor: pointer;
-    }
-
-    .menu-close {
-        display: block;
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        font-size: 30px;
-        color: #333;
-        cursor: pointer;
-    }
-
-    .menu.open {
-        background-color: #ffffff;
-        position: relative;
-        top: 70px;
-        border: 1px solid;
-    }
-
-    .menu.open a,
-    .menu.open {
-        display: block;
-        opacity: 0;
-        transform: translateY(-10px);
-        animation: fadeSlideIn 0.3s forwards ease;
-    }
-
-    .menu-close a,
-    .menu-close {
-        display: block;
-        opacity: 0;
-        transform: translateY(-10px);
-        animation: fadeSlideIn 0.3s forwards ease;
-    }
-
-    .menu.open .menu-toggle::before {
-        content: "\2715";
-        font-size: 30px;
-    }
-}
-
-
-@keyframes fadeSlideIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
+        text-align: center ; 
     }
 }
