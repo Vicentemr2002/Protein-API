@@ -22,7 +22,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 
@@ -30,7 +29,6 @@ header {
     font-size: 28px;
     font-weight: 800;
     color: #1B1B1C;
-    text-align: center;
 }
 
 .menu {
@@ -40,7 +38,7 @@ header {
     justify-content: space-between;
     background-color: transparent;
     transition: background-color 0.3s ease;
-    padding: 10px;
+    
 }
 
 a.enlaces-estilos {
