@@ -21,11 +21,13 @@ header {
     top: 0;
     display: flex;
     align-items: center;
-    text-align: right;
+    justify-content: center;
+
 }
 
+
 .title {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 800;
     color: #1B1B1C;
     text-align: center;
@@ -38,15 +40,7 @@ header {
     justify-content: space-between;
     background-color: transparent;
     transition: background-color 0.3s ease;
-    padding: 20px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #333;
     padding: 10px;
-    transition: all 0.3s ease;
-
 }
 
 a.enlaces-estilos {
@@ -118,9 +112,6 @@ input.search:focus {
 
     .title {
         font-size: 20px;
-        text-align: center;
-        display: flex;
-        text-align: left;
     }
 
     input.search {
