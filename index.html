@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Protein Api Test</title>
-    <link rel="shortcut icon" href="image/proteina.png"> 
+    <link rel="shortcut icon" href="image/proteina.png">
     <link rel="stylesheet" type="text/css" href="/css/styles.css" />
 </head>
 
@@ -16,28 +16,33 @@
         <div href="index.html" class="title">Protein API</div>
 
         <nav>
-
-            <div class="menu">
-
+            <ul class="nav-list">
                 <input type="text" class="search" name="buscador" id="buscador" placeholder="Buscar el producto">
-
-                <a href="index.html" class="enlaces-estilos">Inicio</a>
-
-                <a href="presentation.html" class="enlaces-estilos">Quienes Somos</a>
-
-                <a href="https://github.com/Vicentemr2002" class="vicentemr">Vicentemr</a>
-
-            </div>
-
+                <li><a href="index.html" class="enlaces-estilos">Inicio</a></li>
+                <li><a href="presentation.html" class="enlaces-estilos">Quienes Somos</a></li>
+                <li><a href="https://github.com/Vicentemr2002" class="vicentemr">Vicentemr</a></li>
+            </ul>
         </nav>
 
+        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+        <div id="mobile-menu" class="overlay">
+            <a onclick="closeNav()" href="#" class="CloseNav">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Inicio</a>
+                <a href="presentation.html">Quienes Somos</a>
+                <a href="https://github.com/Vicentemr2002">Vicentemr</a>
+            </div>
+
+        </div>
+
     </header>
-  
+
     <div class="container-protein">
-        
+
 
         <div class="index">
-            
+
         </div>
 
     </div>

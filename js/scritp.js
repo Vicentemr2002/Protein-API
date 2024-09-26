@@ -1,13 +1,7 @@
-const menuToggle = document.getElementById('menu-toggle');
-const menuClose = document.getElementById('menu-close');
-const menu = document.querySelector('.menu');
+function openNav(){
+    document.getElementById("mobile-menu").style.width = "100%";
+}
 
-menuToggle.addEventListener('click', () => {
-    menu.classList.add('open');
-    menuToggle.style.display = 'none'; 
-});
-
-menuClose.addEventListener('click', () => {
-    menu.classList.remove('open');
-    menuToggle.style.display = 'block';
-});
+function closeNav(){
+    document.getElementById("mobile-menu").style.width = "0%";
+}

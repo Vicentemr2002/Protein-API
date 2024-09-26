@@ -18,28 +18,77 @@ header {
     z-index: 110;
     height: 80px;
     width: 100%;
+    padding: 5px 10%;
     top: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+
+header a{
+    text-decoration: none;
 }
 
+header .overlay{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(178, 181, 185, 0.95);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+header .overlay .overlay-content{
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+}
+
+header .overlay a{
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+
+.header .overlay .close{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+}
+
+@media screen and (max-height:450px) {
+    .header .overlay a{
+        font-size: 20px;
+    }
+    .header .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
 
 .title {
     font-size: 28px;
     font-weight: 800;
     color: #1B1B1C;
+    padding: 0 10px;
 }
 
-.menu {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: space-between;
-    background-color: transparent;
-    transition: background-color 0.3s ease;
-    
+header .nav-list{
+    list-style: none ;
 }
+
+header .nav-list li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
 
 a.enlaces-estilos {
     color: black;
@@ -92,6 +141,10 @@ input.search:focus {
 }
 
 
+.menu{
+    display: none;
+}
+
 
 .container-presentation {
     position: relative;
@@ -106,34 +159,38 @@ input.search:focus {
     text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+header .menu button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #E3E7F1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+header .menu button:hover{
+    background-color: #e2f1f8;
+    color: black;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 800px) {
 
     .title {
-        font-size: 20px;
+        font-size: 30px;
     }
+}
 
-    input.search {
+
+@media screen and (max-width: 800px){
+    .nav-list, .btn {
         display: none;
     }
-
-    a.enlaces-estilos,
-    a.vicentemr {
-        font-size: 12px;
-        width: 100px;
-        text-align: center;
-        margin: 20px;
-        padding: 0 10px;
-    }
-
     .menu {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .menu a {
-        display: none;
-        width: 100px;
-        padding: 15px;
-        text-align: center ; 
+        display: inherit;
+        padding: 0 10px;
     }
 }
