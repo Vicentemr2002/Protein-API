@@ -23,12 +23,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
 
-header a{
+header a {
     text-decoration: none;
 }
 
-header .overlay{
+header .overlay {
     height: 100%;
     width: 0;
     position: fixed;
@@ -40,14 +41,14 @@ header .overlay{
     transition: all 0.3s ease 0s;
 }
 
-header .overlay .overlay-content{
-      display: flex;
-      height: 100%;
-      flex-direction: column;
-      align-items: center;
+header .overlay .overlay-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
 }
 
-header .overlay a{
+header .overlay a {
     padding: 15px;
     font-size: 36px;
     display: block;
@@ -55,7 +56,7 @@ header .overlay a{
     color: white;
 }
 
-.header .overlay .close{
+.header .overlay .close {
     position: absolute;
     top: 20px;
     right: 45px;
@@ -63,10 +64,11 @@ header .overlay a{
 }
 
 @media screen and (max-height:450px) {
-    .header .overlay a{
+    .header .overlay a {
         font-size: 20px;
     }
-    .header .overlay .close{
+
+    .header .overlay .close {
         font-size: 40px;
         top: 15px;
         right: 35px;
@@ -80,15 +82,14 @@ header .overlay a{
     padding: 0 10px;
 }
 
-header .nav-list{
-    list-style: none ;
+header .nav-list {
+    list-style: none;
 }
 
-header .nav-list li{
+header .nav-list li {
     display: inline-block;
     padding: 0 10px;
 }
-
 
 a.enlaces-estilos {
     color: black;
@@ -140,26 +141,27 @@ input.search:focus {
     background-color: #f8f9fa;
 }
 
-
-.menu{
+.menu {
     display: none;
 }
 
-
 .container-presentation {
     position: relative;
-    top: 200px;
-    margin: 20px;
-    background-color: #F1EDE3;
-    height: 50%;
-}
+    top: 150px;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0 0 5px #2A2A2A ;
+    height: 100%;
 
+}
 
 .index-presentation p {
     text-align: center;
+    font-size: 30px;
+    font-family: fantasy;
 }
 
-header .menu button{
+header .menu button {
     margin-left: 20px;
     font-weight: 700;
     color: #1b3039;
@@ -171,24 +173,25 @@ header .menu button{
     transition: all 0.3s ease 0s;
 }
 
-header .menu button:hover{
+header .menu button:hover {
     background-color: #e2f1f8;
     color: black;
     transform: scale(1.1);
 }
 
 @media screen and (max-width: 800px) {
-
     .title {
         font-size: 30px;
     }
 }
 
 
-@media screen and (max-width: 800px){
-    .nav-list, .btn {
+@media screen and (max-width: 800px) {
+    .nav-list,
+    .btn {
         display: none;
     }
+
     .menu {
         display: inherit;
         padding: 0 10px;
