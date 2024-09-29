@@ -185,7 +185,7 @@ header .menu button:hover {
 
 .container-presentation {
     position: relative;
-    top: 150px;
+    top: 120px;
     margin: 10px;
     background-color: white;
     box-shadow: 0 0 5px silver;
@@ -304,6 +304,7 @@ header .menu button:hover {
         height: auto;
         width: 300px;                   
     }
+
     
     .image {
         height: 300px;       
