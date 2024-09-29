@@ -193,6 +193,10 @@ header .menu button:hover {
 
 }
 
+.index-presentation{
+    margin: 20px;
+}
+
 .index-presentation p {
     text-align: center;
     font-size: 30px;
