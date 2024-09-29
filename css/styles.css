@@ -236,8 +236,8 @@ header .menu button:hover {
 
 
 .image {
-    height: 300px;             
-    width: 350px;              
+    height: auto;             
+    width: auto;              
     display: flex;
     justify-content: center;  
     align-items: center;   
