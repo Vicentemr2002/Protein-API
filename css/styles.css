@@ -203,18 +203,42 @@ header .menu button:hover {
 .image img {
     max-width: 100%;          
     height: auto;             
-    cursor: pointer;          
     max-height: 100%;       
     object-fit: cover;
 }  
+
+.image1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: 0.5s ease;
+}
+
+.image2{
+    z-index: 2;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.image:hover .image1{
+    opacity: 0;
+}
+
+.image:hover .image2{
+    opacity: 1;
+}
+
 
 .image {
     height: 300px;             
     width: 350px;              
     display: flex;
     justify-content: center;  
-    align-items: center;     
+    align-items: center;   
 }
+
+
 
 
 .container-protein {
