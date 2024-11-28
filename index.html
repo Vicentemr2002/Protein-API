@@ -17,7 +17,18 @@
 
         <nav>
             <ul class="nav-list">
-                <input type="text" class="search" name="buscador" id="buscador" placeholder="Buscar el producto">
+                <input type="text" class="search"  name="buscador" id="buscador" placeholder="Buscar el producto">
+                <p id="noResultsMessage" style="
+                position: absolute; 
+                top: 100%; 
+                left: 0; 
+                width: 100%; 
+                text-align: center; 
+                color: red; 
+                margin: 35px 0 0 0; 
+                display: none;
+                font-size: 24px;">No se encontró ninguna proteína que coincida con la búsqueda.</p>
+        </div>
                 <li><a href="index.html" class="enlaces-estilos">Inicio</a></li>
                 <li><a href="presentation.html" class="enlaces-estilos">Quienes Somos</a></li>
                 <li><a href="https://github.com/Vicentemr2002" class="vicentemr">Vicentemr</a></li>
@@ -40,19 +51,137 @@
 
     <div class="container-protein">
 
-        <div class="index-protein">
-            <div class="image">
-                <img class="image1" src="/image/wheyprotein.png">
-                <img class="image2" src="/image/wheyproteintable.png" height="200px">
-            </div>
-            <div class="information">
-                <p>Valor actualmente: $22.150</p>
-                <h1>Wheyprotein trumade</h1>
-            </div>
-        </div>
+      <div class="index-protein">
+          <div class="image">
+              <img class="image1" src="/image/wheyprotein.png">
+              <img class="image2" src="/image/trumadeinformation.png">
+          </div>
+          <div class="information" id="ListProductos">
+              <p>Valor: $43.20</p>
+              <h1>Marca: Trumade WheyProtein</h1>
+              <h1>Sabor: Vainilla</h1>
+          </div>
+      </div>
 
-    </div>
+      <div class="index-protein">
+          <div class="image">
+              <img class="image1" src="/image/trumadechocolat.png">
+              <img class="image2" src="/image/trumadeinformation.png">
+          </div>
+          <div class="information" id="ListProductos">
+              <p>Valor: $43.20</p>
+              <h1>Marca: Trumade WheyProtein</h1>
+              <h1>Sabor: Chocolate</h1>
+          </div>
+      </div>
 
+      <div class="index-protein">
+          <div class="image">
+              <img class="image1" src="/image/trumadefrutilla.png">
+              <img class="image2" src="/image/trumadeinformation.png">
+          </div>
+          <div class="information" id="ListProductos">
+              <p>Valor: $43.20</p>
+              <h1>Marca: Trumade WheyProtein</h1>
+              <h1>Sabor: Frutilla</h1>
+          </div>
+      </div>
+
+      <div class="index-protein">
+          <div class="image">
+              <img class="image1" src="/image/dragon.png">
+              <img class="image2" src="/image/wheyphorm-5-lb-tabla.png">
+          </div>
+          <div class="information" id="ListProductos">
+              <p>Valor: $49.90</p>
+              <h1>Marca: Dragonpharma WheyPhorm</h1>
+              <h1>Sabor: Cappuccino</h1>
+          </div>
+      </div>
+
+      <div class="index-protein">
+          <div class="image">
+              <img class="image1" src="/image/wheyphormbrownie.png">
+              <img class="image2" src="/image/wheyphorm-5-lb-tabla.png">
+          </div>
+          <div class="information" id="ListProductos">
+              <p>Valor: $49.90</p>
+              <h1>Marca: Dragonpharma WheyPhorm</h1>
+              <h1>Sabor: Doble Brownie</h1>
+          </div>
+      </div>
+
+      <div class="index-protein">
+          <div class="image">
+              <img class="image1" src="/image/vainilla.png">
+              <img class="image2" src="/image/wheyphorm-5-lb-tabla.png" >
+          </div>
+          <div class="information" id="ListProductos">
+              <p>Valor: $49.90</p>
+              <h1>Marca: Dragonpharma WheyPhorm</h1>
+              <h1>Sabor: Vanilla Ice Cream</h1>
+          </div>
+      </div>
+
+      <div class="index-protein">
+          <div class="image">
+              <img class="image1" src="/image/Whey_xpro_vainilla.png">
+              <img class="image2" src="/image/tenxnutricional.png" >
+          </div>
+          <div class="information" id="ListProductos">
+              <p>Valor: $28.30</p>
+              <h1>Marca: X Pro WheyProtein</h1>
+              <h1>Sabor: Vanilla</h1>
+          </div>
+      </div>
+
+      <div class="index-protein">
+          <div class="image">
+              <img class="image1" src="/image/Whey_xpro_chocolate.png">
+              <img class="image2" src="/image/tenxnutricional.png" >
+          </div>
+          <div class="information" id="ListProductos">
+              <p>Valor: $28.30</p>
+              <h1>Marca: X Pro WheyProtein</h1>
+              <h1>Sabor: Chocolate</h1>
+          </div>
+      </div>
+
+      <div class="index-protein">
+          <div class="image">
+              <img class="image1" src="/image/100__Whey_choco.png">
+              <img class="image2" src="/image/100nutricional.png" >
+          </div>
+          <div class="information" id="ListProductos">
+              <p>Valor: $28.30</p>
+              <h1>Marca: 100% WheyProtein</h1>
+              <h1>Sabor: Chocolate</h1>
+          </div>
+      </div>
+
+      <div class="index-protein">
+          <div class="image">
+              <img class="image1" src="/image/100__Whey_vainilla.png">
+              <img class="image2" src="/image/100nutricional.png" >
+          </div>
+          <div class="information" id="ListProductos">
+              <p>Valor: $28.30</p>
+              <h1>Marca: 100% WheyProtein</h1>
+              <h1>Sabor: Vainilla</h1>
+          </div>
+      </div>
+
+      <div class="index-protein">
+          <div class="image">
+              <img class="image1" src="/image/100_W-FR.png">
+              <img class="image2" src="/image/100nutricional.png">
+          </div>
+          <div class="information" id="ListProductos">
+              <p>Valor: $28.30</p>
+              <h1>Marca: 100% WheyProtein</h1>
+              <h1>Sabor: Frutilla</h1>
+          </div>
+      </div>
     <script src="/js/scritp.js"></script>
 
 </body>
